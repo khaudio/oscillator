@@ -25,14 +25,14 @@ public:
     virtual void _trim_phase();
 
 public:
-    int_fast32_t sampleRate;
+    uint_fast32_t sampleRate;
     T radians;
 
     DiscreetTimeBase();
     DiscreetTimeBase(const DiscreetTimeBase& obj);
     ~DiscreetTimeBase();
 
-    virtual void set_sample_rate(int_fast32_t samplerate);
+    virtual void set_sample_rate(uint_fast32_t samplerate);
 
     virtual T get_phase();
 };
@@ -81,7 +81,7 @@ public:
     OscillatorBase();
     OscillatorBase(const OscillatorBase& obj);
     
-    void set_sample_rate(int_fast32_t samplerate) override;
+    void set_sample_rate(uint_fast32_t samplerate) override;
     virtual void set_frequency(T freq);
 
     virtual bool is_set();

@@ -23,7 +23,7 @@ inline void DiscreetTimeBase<T>::_trim_phase()
 }
 
 template <typename T>
-void DiscreetTimeBase<T>::set_sample_rate(int_fast32_t samplerate)
+void DiscreetTimeBase<T>::set_sample_rate(uint_fast32_t samplerate)
 {
     this->sampleRate = samplerate;
 }
@@ -109,7 +109,7 @@ inline void OscillatorBase<T>::_set()
 }
 
 template <typename T>
-void OscillatorBase<T>::set_sample_rate(int_fast32_t samplerate)
+void OscillatorBase<T>::set_sample_rate(uint_fast32_t samplerate)
 {
     this->sampleRate = samplerate;
     _set();
